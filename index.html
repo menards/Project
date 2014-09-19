@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AGRC Imagery Viewer</title>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.10/js/esri/css/esri.css">
+    <script src="http://js.arcgis.com/3.10/"></script>
+    <script src='js/IdentifyTiles.js'></script>
+    <link rel='stylesheet' href='css/main.css'>
+    <script src='js/main.js'></script>
+  </head>
+  <body>
+    <h1>AGRC Imagery Viewer</h1>
+    <label>
+      <input type="radio" name="layers-group" value="doq1990">
+      <span>DOQ 1990's</span>
+    </label>
+    <label>
+      <input type="radio" name="layers-group" value="uao2003">
+      <span>UAO 2003</span>
+    </label>
+    <label>
+      <input type="radio" name="layers-group" value="hro2009">
+      <span>HRO 2009</span>
+    </label>
+    <label>
+      <input type="radio" name="layers-group" value="hro2012" checked>
+      <span>HRO 2012</span>
+    </label>
+    <p>
+      Click on the map to get image tile download information.
+    </p>
+    <div id="map"></div>
+    <div id="search"></div>
+    <a href='' id='download-link'></a>
+  </body>
+</html>
